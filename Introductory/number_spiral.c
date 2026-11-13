@@ -47,39 +47,32 @@ size_t read_ull_run(ull *out, size_t max, char sep) {
 
 int main(void) {
     ull t = read_ull();
-    for(size_t i=0; i < t; ++i) {
-        ull* xy = malloc(2 * sizeof *xy);
+    for (size_t i = 0; i < t; ++i) {
+        ull xy[2];
         read_ull_run(xy, 2, ' ');
+        ull y = xy[0], x = xy[1];
 
-        ull hx=0, hy=0;
-        if(xy[0] % 2 != 0) {
-            hx = xy[0]*xy[0];
-            hy = hx - 2*xy[0] + 2;
+        ull m = y > x ? y : x;
+
+        ull hx, hy;
+        if (m % 2 != 0) {
+            hx = m * m;
+            hy = (m - 1) * (m - 1) + 1;
         } else {
-            hx = (xy[0]-1)*(xy[0]-1)+1;
-            hy = 3*(hx-1 -2*(xy[0]-1)+2)+1;
+            hx = (m - 1) * (m - 1) + 1;
+            hy = m * m;
         }
 
-        // ugh...
-        if(xy[0] == 1) {
-            if(xy[1] % 2 != 0) {
-                hx = xy[1]*xy[1];
-                hy = hx -2*xy[1]+2;
-            } else {   
-                hx = (xy[1]-1)*(xy[1]-1)+1;
-                hy = 3*(hx-1 -2*(xy[1]-1)+2)+1;
-            }
-        }
-
-        ull ans=0;
-        if(xy[0] == xy[1] || xy[0] > xy[1]) {
-            ans=hx-xy[1]+1;
+        ull ans;
+        if (y <= x) {
+            if (m % 2 != 0) ans = hx - (y - 1);
+            else            ans = hx + (y - 1);
         } else {
-            ans=hy-xy[0]+1;
+            if (m % 2 != 0) ans = hy + (x - 1);
+            else            ans = hy - (x - 1);
         }
 
         printf("%llu\n", ans);
-        free(xy);
     }
     return 0;
 }
