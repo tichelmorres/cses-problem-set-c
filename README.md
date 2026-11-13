@@ -12,5 +12,6 @@ The [CSES Problem Set](https://cses.fi/problemset/) is a well-known collection o
 - [Repetitions](Introductory/repetitions.c)
 - [Increasing Array](Introductory/increasing_array.c)
 - [Permutations](Introductory/permutations.c)
+- [Number Spiral](Introductory/number_spiral.c)
 
 > NOTICE: All solutions in this repository were written entirely by hand. This project has a strict **NO AI** policy. Also, since this repo is a record of my learning process, many solutions are far from optimal.
