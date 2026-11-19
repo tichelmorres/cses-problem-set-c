@@ -15,5 +15,6 @@ The [CSES Problem Set](https://cses.fi/problemset/) is a well-known collection o
 - [Number Spiral](Introductory/number_spiral.c)
 - [Two Knights](Introductory/two_knights.c)
 - [Two Sets](Introductory/two_sets.c)
+- [Bit Strings](Introductory/bit_strings.c)
 
 > NOTICE: All solutions in this repository were written entirely by hand. This project has a strict **NO AI** policy. Also, since this repo is a record of my learning process, many solutions are far from optimal.
