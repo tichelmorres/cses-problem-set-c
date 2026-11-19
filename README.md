@@ -1,3 +1,5 @@
+`Current progress: [9/400]`
+
 # CSES Problem Set Solutions in Pure C
 
 The [CSES Problem Set](https://cses.fi/problemset/) is a well-known collection of problems designed to help programmers (especially those learning dynamic programming) improve their logical thinking, mathematical toolkit, and overall competitive programming (CP) experience. It offers problems at many levels, from introductory to advanced.
