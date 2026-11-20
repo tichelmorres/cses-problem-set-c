@@ -1,4 +1,4 @@
-`Current progress: [9/400]`
+`Current progress: [10/400]`
 
 # CSES Problem Set Solutions in Pure C
 
