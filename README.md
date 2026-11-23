@@ -1,4 +1,4 @@
-`Current progress: [12/400]`
+`Current progress: [13/400]`
 
 # CSES Problem Set Solutions in Pure C
 
@@ -21,5 +21,6 @@ The [CSES Problem Set](https://cses.fi/problemset/) is a well-known collection o
 - [Trailing Zeros](Introductory/trailing_zeros.c)
 - [Coin Piles](Introductory/coin_piles.c)
 - [Palindrome Reorder](Introductory/palindrome_reorder.c)
+- [Gray Code](Introductory/gray_code.c)
 
 > NOTICE: All solutions in this repository were written entirely by hand. This project has a strict **NO AI** policy. Also, since this repo is a record of my learning process, many solutions are far from optimal.
